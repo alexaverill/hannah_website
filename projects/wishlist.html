@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<header>
+    <!--CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600|Playfair+Display|Domine|Open+Sans:400,600"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../lib/css/uikit.min.css" />
+    <link rel="stylesheet" href="../lib/css/index.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</header>
+
+<body>
+    <div class="background">
+
+        <!--Main Navigation-->
+        <nav class="uk-navbar-container uk-navbar-transparent nav-negative uk-visible@m" uk-navbar>
+            <div class="uk-navbar-left">
+                <a href="../index.html" class="uk-navbar-item uk-logo"><img style="width: 45px;" src="../lib/images/triangle_icon.png"></a>
+                <!--Logo Home-->
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li><a href="../index.html">portfolio</a></li>
+                    <!--Portfolio-->
+                    <li><a href="../about.html">about</a></li>
+                    <!--About-->
+                </ul>
+            </div>
+        </nav>
+
+        <!--Mobile Navigation-->
+        <button id="mobile-nav-button" class="uk-hidden@m" type="button" uk-toggle="target: #mobile-nav" uk-icon="icon: menu"></button>
+        <div id="mobile-nav" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar">
+                <ul class="uk-nav uk-nav-default">
+                    <a class="uk-offcanvas-close" uk-close></a>
+                    <li><a href="../index.html">portfolio</a></li>
+                    <li><a href="../about.html">about</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Return to Top-->
+        <a class="totop uk-visible@m" href="#" uk-totop uk-scroll uk-scrollspy="cls: uk-animation-fade; offset-top: 100">Return to Start
+        </a>
+
+        <!--Project Title Card-->
+        <div class="uk-flex-middle" uk-grid>
+            <div class="hero-image-container uk-width-1-2@m uk-visible@m uk-image">
+                <img class="hero-image uk-animation-fade" data-src="../lib/images/wishlist.png" alt="" uk-img>
+            </div>
+            <div class="uk-width-1-2@m">
+                <div class="hero-text uk-text-center">
+                    <h1>Family Wishlist</h1>
+                    <p class="lead">Mission: Create a wishlist app for family and friends to easily create wishlists and claim gifts for others</p>
+                    <hr class="uk-divider-small">
+                    <ul class="project-menu uk-list" uk-scrollspy="cls: uk-animation-fade; target: .menu-item; delay: 100;">
+                        <li class="menu-item"><a href="#problem" class="no-decoration" uk-scroll>The Problem: Too Many Emails</a></li>
+                        <li class="menu-item"><a href="#design" class="no-decoration" uk-scroll>Designing the Web App</a></li>
+                        <li class="menu-item"><a href="#result" class="no-decoration" uk-scroll>Results and Reflection</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+
+        
+
+        <!--Introduction-->
+        <div class="project-intro">
+            <div class="uk-margin-auto uk-container" uk-grid>
+                <div class="uk-width-3-4@m">
+                    <h3>Introduction</h3>
+                    <p>Every year around Christmas, the Averill family created a massive email chain detailing everyone’s Christmas wishlists. There would be emails upon emails about who’s claiming what gift for which person. There was confusion about which gifts have already been claimed, people get left out of email chains, and gift recipients are accidentally left on discussions about their gift. In all the chaos, the original wishlists got lost. Christmas generally worked out alright in the end, but everyone knew there must be a better solution.</p>
+                    <p>Alex Averill and I tackled this problem by designing and developing a React-based web app that could manage everyone’s Christmas wishlists. Gift recipients can easily create, edit, and share their wishlists, and gift givers can claim items and see what others have claimed. The app was successfully used during Christmas 2020, and it continues to be used for birthdays and other family gift events to this day.</p>
+                </div>
+                <div class="uk-width-1-4@m">
+                    <h5>Role</h5>
+                    <span>UX/UI Designer</span><br>
+                    <span>React Frontend Developer</span><br>
+                    <h5>Time</h5>
+                    <span>3 Months (Launched November 2020)</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Content-->
+        <div class="project-content">
+            <div class="uk-container-small uk-margin-auto uk-padding">
+                
+                <!--Objective 1-->
+                <hr id="problem" class="uk-divider-icon">
+                <div class="objective-block">
+                    <h3>The Problem: Too Many Emails</h3>
+                </div>
+                <div class="text-block">
+                
+                    <h5>Understanding the Issues</h5>
+                    <p>I experienced firsthand during Christmas 2019 of how wishlists were handled originally. The main method of sharing wishlists was through email. Each person would send an email, or respond to another’s email, with their wishlist included. Following that, people would reply all to everyone but the recipient with the gift(s) that they plan on buying. Sometimes, people would discuss going in together on gifts, or follow up with questions.</p>
+                    <p>This method worked, but there were several flaws:</p>
+                    <ul>
+                        <li>Dozens of emails made it difficult to find the original wishlists and sort through which items you have and have not claimed.</li>
+                        <li>In efforts to preserve the secrecy for the gift recipient, other people were accidentally left off of email chains they needed to be on. Other times, the gift recipient was accidentally a part of their gift planning discussion.</li>
+                        <li>The same gift was sometimes claimed twice due to miscommunication.</li>
+                        <li>Additional emails with clarification about a gift were often overlooked.</li>
+                    </ul>
+                    <p>These problems exponentially increased as more people were added their wishlists.</p>
+
+                    <h5>Defining Features</h5>
+                    <p>After experiencing Christmas with the Averills and identifying the core issues and needs, I brainstormed with Alex to define a feature list.</p>
+                    <p>For the minimum viable product, features include:</p>
+                    <ul>
+                        <li>Login/logout</li>
+                        <li>View all events
+                            <ul>
+                                <li>Event details: Event Name, Date of Event, Number of Lists, Participants</li>
+                            </ul>
+                        </li>
+                        <li>View all wishlists associated with an event
+                            <ul>
+                                <li>List details: List Owner, Number of Items</li>
+                                <li>View others wishlists</li>
+                                <li>Create or edit your own wishlist</li>
+                            </ul>
+                        </li>
+                        <li>View and claim items in another’s wishlist
+                            <ul>
+                                <li>View item details: Name, Cost, URL, Comments, Claim Status</li>
+                                <li>See if an item is claimed and by who</li>
+                                <li>Claim or unclaim an item in a list</li>
+                            </ul>
+                        </li>
+                        <li>Create and edit a wishlist
+                            <ul>
+                                <li>Item Details: Name, Cost, URL, Comments</li>
+                                <li>Share the wishlist when ready</li>
+                            </ul>
+                        </li>
+                        <li>See who gave you which gifts after the event</li>
+                    </ul>
+
+                    <p>Future features include:</p>
+                    <ul>
+                        <li>Ability for anyone to create an event</li>
+                        <li>View all claimed gifts for every event in a single list</li>
+                        <li>See which people you haven’t claimed a gift for yet</li>
+                        <li>Receive reminders to create wishlists</li>
+                        <li>Add people to events</li>
+                    </ul>
+            
+                </div>
+
+                <!--Objective 3-->
+                <hr id="design" class="uk-divider-icon">
+                <div class="objective-block">
+                    <h3>Designing the Web App</h3>
+                </div>
+                <div class="text-block">
+                    <p>Our goal for the application was to create something simple and straightforward. The architecture of the application came about naturally - events were made of wishlists which were made of gift requests.</p>
+
+                    <p>After logging in, users are presented with a list of events, such as birthdays, graduations, and Christmas. Most events are focused on a single gift recipient, but events like Christmas are made up of multiple wishlists from different people.</p>
+                    <div uk-lightbox>
+                        <a href="../lib/images/wish/event_list.png" data-caption="The landing page shows a list of events.">
+                            <img src="../lib/images/wish/event_list.png" alt="The landing page shows a list of events.">
+                        </a>
+                    </div>
+                    
+                        
+                    <p>After selecting a wishlist for somebody else, the user can see all of the requested items and their details, such as cost, links, and special comments. The user can also see if another user has already claimed an item, and they can select their own item to claim. Gift recipients are not shown any info about who claimed what until after the event has passed.</p>
+                    <div uk-lightbox>
+                        <a href="../lib/images/wish/create_list.png" data-caption="Users can view and claim items from other's wishlists.">
+                            <img src="../lib/images/wish/create_list.png" alt="Users can view and claim items from other's wishlists.">
+                        </a>
+                    </div>
+                        
+                    <p>Finally, users can create their own wishlist. Items are added using a simple form field. A few key fields like cost and item URL are baked into the form. A comment field is available for any special notes about their gift request. Wishlist items are auto-saved. When a user is ready, they can choose to share their wishlist, which sends out an email notification to everyone associated with an event.</p>
+                    <div uk-lightbox>
+                        <a href="../lib/images/wish/view_list.png" data-caption="Users can create and share their own lists.">
+                            <img src="../lib/images/wish/view_list.png" alt="Users can create and share their own lists.">
+                        </a>
+                    </div>
+
+                </div>
+
+                <!--Reflection-->
+                <hr id="result" class="uk-divider-icon">
+                <div class="objective-block">
+                    <h3>Results & Reflection</h3>
+                </div>
+                <div class="text-block">
+                    <p>The application was a wonderful success. It continues to be used for family birthdays and Christmas to this day.</p>
+                    <p>The best feedback I got was rather the lack of feedback. People really enjoyed the app and found it easy to use. Besides for a couple minor support issues with user accounts, people were easily able to use the app.</p>
+                    <p>I also got the comment from one of the older members of the family: “This is easiest application I’ve used. Are you going to sell this? You should sell this.”</p>
+                    <p>Family is supposed to be nice, but still, it warmed my heart to hear that.</p>
+                
+                </div>
+                
+            </div>
+
+            
+
+        </div>
+
+        <!--End Content Container-->
+
+        <!--Footer-->
+        <footer class="footer">
+            <nav class="uk-navbar-container uk-navbar-transparent uk-container uk-container-medium" uk-navbar>
+                <div class="uk-navbar-left">
+                    <a href="../index.html" class="uk-navbar-item uk-logo">hannah averill</a>
+                    <!--Logo Home-->
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-subnav uk-subnav-divider">
+                        <li><a href="../index.html">portfolio</a></li>
+                        <!--portfolio-->
+                        <!-- <li><a href="../projects/archive.html">archive</a></li> -->
+                        <!--archive-->
+                        <li><a href="../about.html">about</a></li>
+                        <!--about-->
+                        <li><a href="https://www.linkedin.com/in/hannah-barnes-0188a1127/">linkedIn</a></li>
+                        <!--LinkedIn-->
+                    </ul>
+                </div>
+            </nav>
+        </footer>
+
+    </div>
+
+    <!--Javascript-->
+    <script src="../lib/js/uikit.min.js"></script>
+    <script src="../lib/js/uikit-icons.min.js"></script>
+</body>

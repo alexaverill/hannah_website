@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<header>
+    <!--CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600|Playfair+Display|Domine|Open+Sans:400,600"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../lib/css/uikit.min.css" />
+    <link rel="stylesheet" href="../lib/css/index.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</header>
+
+<body>
+    <div class="background">
+
+        <!--Main Navigation-->
+        <nav class="uk-navbar-container uk-navbar-transparent nav-negative uk-visible@m" uk-navbar>
+            <div class="uk-navbar-left">
+                <a href="../index.html" class="uk-navbar-item uk-logo"><img style="width: 45px;" src="../lib/images/triangle_icon.png"></a>
+                <!--Logo Home-->
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li><a href="../index.html">portfolio</a></li>
+                    <!--Portfolio-->
+                    <li><a href="../about.html">about</a></li>
+                    <!--About-->
+                </ul>
+            </div>
+        </nav>
+
+        <!--Mobile Navigation-->
+        <button id="mobile-nav-button" class="uk-hidden@m" type="button" uk-toggle="target: #mobile-nav" uk-icon="icon: menu"></button>
+        <div id="mobile-nav" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar">
+                <ul class="uk-nav uk-nav-default">
+                    <a class="uk-offcanvas-close" uk-close></a>
+                    <li><a href="../index.html">portfolio</a></li>
+                    <li><a href="../about.html">about</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Return to Top-->
+        <a class="totop uk-visible@m" href="#" uk-totop uk-scroll uk-scrollspy="cls: uk-animation-fade; offset-top: 100">Return to Start
+        </a>
+
+        <!--Project Title Card-->
+        <div class="uk-flex-middle" uk-grid>
+            <div class="hero-image-container uk-width-1-2@m uk-visible@m uk-image">
+                <img class="hero-image" data-src="../lib/images/jcp.jpg" alt="" uk-img>
+            </div>
+            <div class="uk-width-1-2@m">
+                <div class="hero-text uk-text-center">
+                    <h1>JCPenney Portraits</h1>
+                    <p class="lead">Mission: Design the new JCPenney Portraits marketing website.</p>
+                    <hr class="uk-divider-small">
+                    <ul class="project-menu uk-list" uk-scrollspy="cls: uk-animation-fade; target: .menu-item; delay: 100;">
+                        <li class="menu-item"><a href="#requirements" class="no-decoration" uk-scroll>Requirements and Challenges</a></li>
+                        <li class="menu-item"><a href="#solutions" class="no-decoration" uk-scroll>Solutions and Final Designs</a></li>
+                        <li class="menu-item"><a href="#results" class="no-decoration" uk-scroll>Results: C-Int SBS Summit 2020</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+
+        
+
+        <!--Introduction-->
+        <div class="project-intro">
+            <div class="uk-margin-auto uk-container" uk-grid>
+                <div class="uk-width-3-4@m">
+                    <h3>Introduction</h3>
+                    <p>The Counter Intelligence Social and Behavioral Sciences (C-InT SBS) Summit was the first major project assigned to me at Northrop Grumman. The project started out as a basic informational Wordpress website for an in-person conference, but when the Covid-19 pandemic hit, the in-person conference was changed to an online virtual summit that lasted for the full month of September, with new video content releasing each week. My simple Wordpress website quickly ballooned into a major virtual conference platform that connected over 1500 attendees, resulted in over 21,000 page views, and helped win the next round of contracts for my department.</p>
+                    <p>My role on the project was primarily as the lead Wordpress developer and information architect. I also extended the design system created by my teammate and created dynamic, extensible templates that can be reused for years to come.</p>
+                </div>
+                <div class="uk-width-1-4@m">
+                    <h5>Role</h5>
+                    <span>UX Designer</span><br>
+                    <h5>Client</h5>
+                    <span>JCPenney Portraits by Lifetouch</span>
+                    <h5>Time</h5>
+                    <span>8 Months</span>
+                    <span>Launched June 2022</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Content-->
+        <div class="project-content">
+            <div class="uk-container-small uk-margin-auto uk-padding">
+                
+                <!--Objective 1-->
+                <hr id="requirements" class="uk-divider-icon">
+                <div class="objective-block">
+                    <h3>Requirements and Challenges</h3>
+                    <h4>From time crunches to emerging requirements to multi-tasking</h4>
+                </div>
+                <div class="text-block">
+                    <h5>Requirements</h5>
+                    <ul>
+                        <li>Display over 40 videos of speaker presentations, alongside speaker biographies and additional presentation materials</li>
+                        <li>Organize the website under the top navigation links: Homepage, Speakers, About The Threat Lab, Our Partners, Archive</li>
+                        <li>Release a new wave of content each Monday of September</li>
+                        <li>Update the daily featured content with new videos</li>
+                        <li>Display all speakers and their biographies</li>
+                        <li>Create a user registration system</li>
+                        <li>Display Our Partners and About The Threat Lab information</li>
+                    </ul>
+
+                    <h5>Challenges</h5>
+                    <p><strong>Due to the unique time crunch caused by the pandemic, I was often figuring out designs and interactions as I developed.</strong> This was handy in some ways, since I was using existing plugins that required a dev environment to sort out their UX. However, this meant I was often mind-switching between design and development. Each task now required more time and careful thought.</p> 
+                    <p><strong>Our site map was limited, so I had to come up with innovative ways to surface content and simplify user journeys.</strong> The website’s top navigation had already been decided by the time it came into my hands. I had to make do with what I had to make sure the website still made sense and provided a good user experience to our attendees.</p> 
+                    <p><strong>We had a lot of content and not much time to publish all of it.</strong> We were expecting over 40 videos, 50 speakers, and several resource documents. Because of the pandemic time crunch, we didn’t have much time to upload everything. I would need to be resourceful in creating the best ways to publish and display all of our content.</p>
+                    <p><strong>Emerging requirements meant that we had to be flexible and adapt quickly.</strong> The biggest requirement change came from the pandemic, which meant the summit needed to be virtual. Other requirements included adding in a user registration system and creating alternatives to Vimeo for our government attendees.</p>  
+
+                </div>
+
+                <!--Objective 3-->
+                <hr id="solutions" class="uk-divider-icon">
+                <div class="objective-block">
+                    <h3>Solutions and Final Designs</h3>
+                    <h4>Building a strong foundation for a strong user experience</h4>
+                </div>
+                <div class="text-block">
+                    <p><strong>I designed and developed templates that made it quicker to publish content, easier to maintain data integrity across the site, and reusable for future summits.</strong> Since we were dealing with a large amount of content with data pieces that were shown in multiple places on the website, creating a central data source and templates were the best way to ensure maintainability and increase publishing speed. I created custom content types and data fields in Wordpress. Next, I established necessary relationships between content types, such as which videos belonged to which week, and which speakers presented in which videos. Lastly, I pulled everything into a template that applied to every single video page and speaker page. This technique also allowed me to quickly hide and show an entire week’s worth of content, which was handy since roughly ten videos were launched every Monday morning.</p>
+
+                    <p><strong>I dived into a variety of methods to surface content to encourage exploration and simplify navigation.</strong> Initially, the thought was to put each week’s content on the homepage to promote visibility, but I suggested providing a permanent URL for each week and video so it would be easier to share links and re-find content. I focused on alternative methods to surface content, including a daily featured content section, weekly compilation pages, and recommended videos to watch next after finishing a video.</p>
+
+                    <p><strong>I extended my coworker’s design system to design the internal pages.</strong> My coworker started us off with an excellent brand style and design system, but he left the project before designing the internal pages. I was tasked with finishing his designs and intertwining them with my site map.</p>
+                    <p>You can view the final designs below. To view the full site, visit <a href="https://sbssummit.com">https://sbssummit.com</a>.</p>
+                    <div class="uk-child-width-1-3@m" uk-grid uk-lightbox>
+                        <div class="uk-card">
+                            <div class="uk-card-media-top">
+                                <a href="../lib/images/sbs/sbs_homepage.png" data-caption="C-InT SBS Summit homepage">
+                                    <img src="../lib/images/sbs/sbs_homepage.png" alt="C-InT SBS Summit homepage">
+                                </a>
+                            </div>
+                            <div class="caption">
+                                Homepage
+                            </div>
+                        </div>
+                        <div class="uk-card">
+                            <div class="uk-card-media-top">
+                                <a href="../lib/images/sbs/sbs_week.png" data-caption="Weekly Compilation Page (Week One shown)">
+                                    <img src="../lib/images/sbs/sbs_week.png"
+                                        alt="Weekly Compilation Page (Week One shown)">
+                                </a>
+                            </div>
+                            <div class="caption">
+                                Weekly Compilation Page (Week One shown)
+                            </div>
+                        </div>
+                        <div class="uk-card">
+                            <div class="uk-card-media-top">
+                                <a href="../lib/images/sbs/sbs_video.png" data-caption="Video Page (Welcome to the SBS Summit video shown)">
+                                    <img src="../lib/images/sbs/sbs_video.png"
+                                        alt="Video Page (Welcome to the SBS Summit video shown)">
+                                </a>
+                            </div>
+                            <div class="caption">
+                                Video Page (Welcome to the SBS Summit video shown)
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!--Objective 3-->
+                <hr id="results" class="uk-divider-icon">
+                <div class="objective-block">
+                    <h3>Results: C-Int SBS Summit 2020</h3>
+                    <h4>An incredible start for future summits to come</h4>
+                </div>
+                <div class="text-block">
+                    <p>The team had little frame of reference for what the summit could be. This was the first time the client had ever done anything like this. At the close of September 2020, we all concluded that the first ever C-InT SBS Summit was a success.</p>
+
+                    <p>
+                        The summit received:
+                    </p>
+                    <ul>
+                        <li>~1,500 registered visitors</li>
+                        <li>21,000+ pageviews</li>
+                        <li>~100 comments on videos</li>
+                        <li>30+ great reviews from post-summit surveys and comments, plus several internal commendations</li>
+                    </ul>
+
+                    <p>Most significantly for myself and my team, the C-Int SBS Summit was one of the key projects that won my department the next round of contracts, which consisted of 50+ projects for my team. The summit will return next year, and there are plans to keep hosting it annually each September. While I expect the summit to continue to grow in functionality and size, the infrastructure I built can serve as a foundation for years to come. I am very proud of my work and how it helped my team, our client The Threat Lab, and counter-insider threat professionals around the world.</p>
+
+                </div>
+                
+            </div>
+
+            
+
+        </div>
+
+        <!--End Content Container-->
+
+        <!--Footer-->
+        <footer class="footer">
+            <nav class="uk-navbar-container uk-navbar-transparent uk-container uk-container-medium" uk-navbar>
+                <div class="uk-navbar-left">
+                    <a href="../index.html" class="uk-navbar-item uk-logo">hannah averill</a>
+                    <!--Logo Home-->
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-subnav uk-subnav-divider">
+                        <li><a href="../index.html">portfolio</a></li>
+                        <!--portfolio-->
+                        <!-- <li><a href="../projects/archive.html">archive</a></li> -->
+                        <!--archive-->
+                        <li><a href="../about.html">about</a></li>
+                        <!--about-->
+                        <li><a href="https://www.linkedin.com/in/hannah-barnes-0188a1127/">linkedIn</a></li>
+                        <!--LinkedIn-->
+                    </ul>
+                </div>
+            </nav>
+        </footer>
+
+    </div>
+
+    <!--Javascript-->
+    <script src="../lib/js/uikit.min.js"></script>
+    <script src="../lib/js/uikit-icons.min.js"></script>
+</body>

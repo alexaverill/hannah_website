@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<header>
+    <!--CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600|Playfair+Display|Domine|Open+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="lib/css/uikit.min.css" />
+    <link rel="stylesheet" href="lib/css/index.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</header>
+
+<body onload="initialize(300,50)">
+    <div class="background">
+
+        <canvas id="mainCanvas" width="100%" height="100%">
+        
+        </canvas>
+
+        <!--Main Navigation-->
+        <nav class="uk-navbar-container uk-navbar-transparent uk-visible@m" uk-navbar>
+            <div class="uk-navbar-left">
+                <a href="#" class="uk-navbar-item uk-logo"><img style="width: 45px;" src="lib/images/triangle_icon.png"></a>
+                <!--Logo Home-->
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li><a href="#">portfolio</a></li>
+                    <!--Portfolio-->
+                    <li><a href="about.html">about</a></li>
+                    <!--About-->
+                </ul>
+            </div>
+        </nav>
+        
+        <!--Mobile Navigation-->
+        <button id="mobile-nav-button" class="uk-hidden@m" type="button" uk-toggle="target: #mobile-nav" uk-icon="icon: menu"></button>
+        <div id="mobile-nav" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar">
+                <ul class="uk-nav uk-nav-default">
+                    <a class="uk-offcanvas-close" uk-close></a>
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="about.html">about</a></li>
+                </ul>
+            </div>
+        </div>
+
+    <!--Content Container-->
+    <div class="content uk-container uk-container-large">
+
+
+    <!--Intro Block-->
+        <div class="header"> 
+            <h1>hannah averill<span style="color: #FF6383;">.</span></h1>
+            <!-- <h2>ux designer. frontend developer. user researcher.</h2> -->
+            <p class="lead">I design holistic, user-centered solutions for digital products.</p>
+            <hr class="uk-divider-small">
+            <p class="text-light">Select a topic below to explore case studies of my work.</p>
+        </div>
+
+    <!--Portfolio Grid-->
+    <div id="project-container">
+        
+        <div uk-filter="target: .js-filter">
+            <!--Project Category Filter-->
+            <!--Future Hannah, consider adding priority or date filtering-->
+            <ul id="project-filter" class="uk-subnav uk-subnav-pill uk-flex uk-flex-center">
+                <li uk-filter-control><a href="#" class="no-decoration uk-margin-small">All</a></li>
+                <li uk-filter-control=".ux"><a href="#" class="no-decoration uk-margin-small">User Experience Design</a></li>
+                <li uk-filter-control=".ia"><a href="#" class="no-decoration uk-margin-small">Information Architecture</a></li>
+                <li uk-filter-control=".dev"><a href="#" class="no-decoration uk-margin-small">Web Development</a></li>
+                <li uk-filter-control=".visual"><a href="#" class="no-decoration uk-margin-small">Visual Design</a></li>
+            </ul>
+
+            <!--Project Grid-->
+            <ul class="js-filter uk-grid-small uk-grid-match uk-child-width-1-4@xl uk-child-width-1-3@l uk-child-width-1-2@s uk-child-width-1-1@xs" uk-grid>
+
+                <!--<li class="ux ia">
+                    JCP Portraits
+                    <div class="uk-card uk-card-default uk-text-center">
+                        <div class="uk-card-media-top uk-inline">
+                            <img class="project-image" src="lib/images/jcp_thumbnail.jpg">
+                            <a href="projects/jcp.html" class="uk-overlay uk-position-cover hover-dark"><span
+                                    class="uk-position-center uk-overlay">A modernized experience for mobile users</span>
+                            </a>
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">JCPenney Portraits</h3>
+                            <div class="uk-inline uk-flex uk-flex-center">
+                                <div class="tag ux-tag">UX/UI Design</div>
+                                <div class="tag ia-tag">IA</div>
+                            </div>
+                            
+                            <p><strong>Mission:</strong> Design the new JCPenney Portraits marketing website.</p>
+                                <a href="projects/jcp.html"><button>Read the Case Study</button></a>
+                        </div>
+                    </div>
+                </li> -->
+
+                <li class="ux ia dev">
+                    <!--SBS Summit-->
+                    <div class="uk-card uk-card-default uk-text-center">
+                        <div class="uk-card-media-top uk-inline">
+                            <img class="project-image" src="lib/images/sbs_thumbnail.jpg">
+                            <a href="projects/sbs.html" class="uk-overlay uk-position-cover hover-dark"><span
+                                    class="uk-position-center uk-overlay">From in-person conference to month-long virtual summit</span>
+                            </a>
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">SBS Summit</h3>
+                            <div class="uk-inline uk-flex uk-flex-center">
+                                <div class="tag dev-tag">Wordpress Dev</div>
+                                <div class="tag ux-tag">UX Design</div>
+                                <div class="tag ia-tag">IA</div>
+                            </div>
+                            
+                            <p><strong>Mission:</strong> Develop a virtual conference platform for the C-InT SBS Summit.</p>
+                                <a href="projects/sbs.html"><button>Read the Case Study</button></a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="ux dev">
+                    <!-- Family Wishlist -->
+                    <div class="uk-card uk-card-default uk-text-center">
+                        <div class="uk-card-media-top uk-inline">
+                            <img class="project-image" src="lib/images/wish_thumbnail.jpg">
+                            <a href="projects/wishlist.html" class="uk-overlay uk-position-cover hover-dark"><span
+                                    class="uk-position-center uk-overlay">Solving the Christmas wishlist chaos</span>
+                            </a>
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Family Wishlist</h3>
+                            <div class="uk-inline uk-flex uk-flex-center">
+                                <div class="tag ux-tag">UX/UI Design</div>
+                                <div class="tag dev-tag">React Dev</div>
+                            </div>
+                            
+                            <p><strong>Mission:</strong> Create a wishlist app for family and friends to easily create wishlists and claim gifts for others.</p>
+                                <a href="projects/wishlist.html"><button>Read the Case Study</button></a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="ux ia"> <!--ReDisturb-->
+                    <div class="uk-card uk-card-default uk-text-center">
+                        <div class="uk-card-media-top uk-inline">
+                            <img class="project-image" src="lib/images/redisturb_thumbnail.jpg">
+                            <a href="projects/redisturb.html" class="uk-overlay uk-position-cover hover-dark"><span class="uk-position-center uk-overlay">From experiment to professional platform</span>
+                            </a>
+                        </div>
+                        <div class="uk-card-body">                     
+                            <h3 class="uk-card-title ">ReDisturb</h3>
+                            <div class="uk-inline uk-flex uk-flex-center">
+                                <div class="tag ia-tag">IA</div>
+                                <div class="tag ux-tag">UX Design</div>
+                            </div>
+                            <p><strong>Mission:</strong> Revamp the user experience and information architecture of the academic podcast platform, Creative Disturbance.</p>
+                            <a href="projects/redisturb.html"><button>Read the Case Study</button></a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="visual ia dev">
+                    <!--Apex Catalyst Group-->
+                    <div class="uk-card uk-card-default uk-text-center">
+                        <div class="uk-card-media-top uk-inline">
+                            <img class="project-image" src="lib/images/acg_thumbnail.jpg">
+                            <a href="projects/acg.html" class="uk-overlay uk-position-cover hover-dark"><span
+                                    class="uk-position-center uk-overlay">Designing a bright and trustworthy identity for ACG</span>
+                            </a>
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Apex Catalyst Group</h3>
+                            <div class="uk-inline uk-flex uk-flex-center">
+                                <div class="tag ia-tag">IA</div>
+                                <div class="tag dev-tag">Wordpress Dev</div>
+                                <div class="tag visual-tag">Visual Design</div>
+                            </div>
+                            
+                            <p><strong>Mission:</strong> Design and develop the new visual identity and website for the business
+                                development company, Apex Catalyst Group.</p>
+                                <a href="projects/acg.html"><button>Read the Case Study</button></a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="ux visual"> <!--DegreeChamp-->
+                    <div class="uk-card uk-card-default uk-text-center">
+                        <div class="uk-card-media-top uk-inline">
+                            <img class="project-image" src="lib/images/degreechamp_thumbnail.jpg">
+                            <a href="projects/degreechamp.html" class="uk-overlay uk-position-cover hover-dark"><span class="uk-position-center uk-overlay">Revolutionizing college degree planning</span>
+                            </a>
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">DegreeChamp</h3> <!--Project Title-->
+                            <div class="uk-inline uk-flex uk-flex-center">
+                                <div class="tag ux-tag">UX Design</div>
+                                <div class="tag visual-tag">Visual Design</div>
+                            </div>
+                            <p><strong>Mission:</strong> Design a custom degree planner application that increases on-time college graduation rates.</p>
+                            <a href="projects/degreechamp.html"><button>Read the Case Study</button></a>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- <li class="visual"> Logo Gallery
+                    <div class="uk-card uk-card-default uk-text-center">
+                        <div class="uk-card-media-top uk-inline">
+                            <div class="uk-flex uk-position-top-right uk-width-1-1">
+                                Project Tags
+                                <div class="tag visual-tag">Visual Design</div>
+                            </div>
+                            <img class="project-image" src="lib/images/logo_gallery_thumbnail.jpg"
+                                alt="Microphone representing the case study for ReDisturb">
+                            <a href="projects/logogallery.html" class="uk-overlay uk-position-cover hover-dark"><span class="uk-position-center uk-overlay">Visualizing leadership, physiology, flamingos, and more</span>
+                            </a>
+                        </div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Logo Gallery</h3>
+                            <p>View a collection of all logos I've designed.</p>
+                        </div>
+                    </div>
+                </li> -->
+            </ul>
+        
+        </div>
+    </div>
+
+    </div> <!--End Content Container-->
+
+    <!--Footer-->
+    <footer class="footer">
+        <nav class="uk-navbar-container uk-navbar-transparent uk-container uk-container-medium" uk-navbar>
+            <div class="uk-navbar-left">
+                <a href="#" class="uk-navbar-item uk-logo">hannah averill</a>
+                <!--Logo Home-->
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-subnav uk-subnav-divider">
+                    <li><a href="index.html">portfolio</a></li>
+                    <!--portfolio-->
+                    <!-- <li><a href="projects/archive.html">archive</a></li> -->
+                    <!--archive-->
+                    <li><a href="about.html">about</a></li>
+                    <!--about-->
+                    <li><a href="https://www.linkedin.com/in/hannah-barnes-0188a1127/">linkedIn</a></li>
+                    <!--LinkedIn-->
+                </ul>
+            </div>
+        </nav>
+    </footer>
+
+    </div>
+
+    <!--Javascript-->
+    <script src="lib/js/uikit.min.js"></script>
+    <script src="lib/js/uikit-icons.min.js"></script>
+    <script src="lib/js/firefly.js"></script>
+</body>

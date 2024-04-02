@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<header>
+    <!--CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600|Playfair+Display|Domine|Open+Sans:400,600"
+        rel="stylesheet">
+    <link rel="stylesheet" href="lib/css/uikit.min.css" />
+    <link rel="stylesheet" href="lib/css/index.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</header>
+
+<body onload="initialize(300,50)">
+    <div class="background">
+
+        <canvas id="mainCanvas" width="100%" height="100%">
+        
+        </canvas>
+
+        <!--Main Navigation-->
+        <nav class="uk-navbar-container uk-navbar-transparent uk-visible@m" uk-navbar>
+            <div class="uk-navbar-left">
+                <a href="index.html" class="uk-navbar-item uk-logo"><img style="width: 45px;" src="lib/images/triangle_icon.png"></a>
+                <!--Logo Home-->
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li><a href="index.html">portfolio</a></li>
+                    <!--Portfolio-->
+                    <li class="uk-active"><a href="#">about</a></li class="uk-active">
+                    <!--About-->
+                </ul>
+            </div>
+        </nav>
+
+        <!--Mobile Navigation-->
+        <button id="mobile-nav-button" class="uk-hidden@m" type="button" uk-toggle="target: #mobile-nav"
+            uk-icon="icon: menu"></button>
+        <div id="mobile-nav" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar">
+                <ul class="uk-nav uk-nav-default">
+                    <a class="uk-offcanvas-close" uk-close></a>
+                    <li><a href="index.html">portfolio</a></li>
+                    <li><a href="#">about</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+            <!--Portfolio Grid-->
+        <div class="uk-container uk-margin-auto uk-padding">
+            <div id="about-me" uk-grid>
+                <div>
+                    <h2>About Me</h2>
+                    <p>Hello! My name is <strong>Hannah Averill.</strong> I'm a user experience designer, which means I enjoy crafting holistic solutions that
+                        make life easier and more enjoyable for people. For the past 5 years, I've helped companies understand their
+                        userbase and design effective, user-friendly software that meets their users' needs. I'm currently based in the Twin Cities metro area.</p>
+                    <p>My specialties include <strong>UX design</strong>, <strong>information architecture,</strong> <strong>accessibility,</strong> and <strong>front-end
+                            web development.</strong></p>
+                </div>
+            </div>                
+        </div>
+
+            <div class="project-content">
+                <!--Skills-->
+                <div class="uk-container uk-margin-auto uk-padding">
+                    <h3>Skills</h3>
+                    <div class="uk-grid uk-child-width-1-3@m">
+                        <div>
+                            <p><strong>UX Design</strong><br>
+                                Wireframing<br>Rapid Prototyping<br>User Interviews</p>
+                            <p><strong>Accessibility</strong><br>
+                                508 Compliance</p>
+                        </div>
+                        <div>
+                            <p><strong>Web Development</strong><br>
+                                HTML/CSS/JS<br>MySQL</p>
+                            <p><strong>Usability Testing</strong><br>
+                                Heuristic Evaluation<br>Remote User Testing</p>
+                        </div>
+                        <div>
+                            <p><strong>Information Architecture</strong><br>
+                                Site Mapping<br>Card Sorting</p>
+                            <p><strong>Visual Design</strong><br>
+                                Logo & Brand Design<br>Web Design</p>
+                    
+                            <!-- <p><strong>Project Management</strong></p> -->
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <!--Work History-->
+                <div class="uk-container uk-margin-auto uk-padding">
+                    <h3>History</h3>
+                    <div class="uk-container-small  timeline-container">
+                        <div class="uk-flex uk-flex-column">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-item">
+                                <h5>Lifetouch + Shutterfly</h5>
+                                <p><strong>Product Designer</strong></p>
+                                <p>Aug. 2021 - Current</p>
+                            </div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-item">
+                                <h5>Northrop Grumman</h5>
+                                <p><strong>UX Designer & Front-end Developer</strong></p>
+                                <p>Department of Learning & Communication Solutions</p>
+                                <p>Oct. 2019 - Aug. 2021</p>
+                            </div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-item">
+                                <h5>Comagine Health</h5>
+                                <p><strong>Front-end Developer & Designer</strong></p>
+                                <p>Mar. 2019 - Oct. 2019</p>
+                            </div>
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-item timeline-item-last">
+                                <h5>BA in Arts and Technology</h5>
+                                <p><strong>University of Texas at Dallas</strong></p>
+                                <p>Minor in Software Engineering | 3.9 GPA</p>
+                                <p>Aug. 2016 - Dec. 2018</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+
+        <!--End Content Container-->
+
+        <!--Footer-->
+        <footer class="footer">
+            <nav class="uk-navbar-container uk-navbar-transparent uk-container uk-container-medium" uk-navbar>
+                <div class="uk-navbar-left">
+                    <a href="index.html" class="uk-navbar-item uk-logo">hannah averill</a>
+                    <!--Logo Home-->
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-subnav uk-subnav-divider">
+                        <li><a href="index.html">portfolio</a></li>
+                        <!--portfolio-->
+                        <!-- <li><a href="projects/archive.html">archive</a></li> -->
+                        <!--archive-->
+                        <li><a href="about.html">about</a></li>
+                        <!--about-->
+                        <li><a href="https://www.linkedin.com/in/hannah-barnes-0188a1127/">linkedIn</a></li>
+                        <!--LinkedIn-->
+                    </ul>
+                </div>
+            </nav>
+        </footer>
+
+    </div>
+
+    <!--Javascript-->
+    <script src="lib/js/uikit.min.js"></script>
+    <script src="lib/js/uikit-icons.min.js"></script>
+    <script src="lib/js/firefly.js"></script>
+</body>

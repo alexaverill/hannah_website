@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<header>
+    <!--CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600|Playfair+Display|Domine|Open+Sans:400,600"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../lib/css/uikit.min.css" />
+    <link rel="stylesheet" href="../lib/css/index.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</header>
+
+<body>
+    <div class="background">
+
+        <!--Main Navigation-->
+        <nav class="uk-navbar-container uk-navbar-transparent nav-negative uk-visible@m" uk-navbar>
+            <div class="uk-navbar-left">
+                <a href="../index.html" class="uk-navbar-item uk-logo"><img style="width: 45px;" src="../lib/images/triangle_icon.png"></a>
+                <!--Logo Home-->
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li><a href="../index.html">portfolio</a></li>
+                    <!--Portfolio-->
+                    <li><a href="../about.html">about</a></li>
+                    <!--About-->
+                </ul>
+            </div>
+        </nav>
+
+        <!--Mobile Navigation-->
+        <button id="mobile-nav-button" class="uk-hidden@m" type="button" uk-toggle="target: #mobile-nav" uk-icon="icon: menu"></button>
+        <div id="mobile-nav" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar">
+                <ul class="uk-nav uk-nav-default">
+                    <a class="uk-offcanvas-close" uk-close></a>
+                    <li><a href="../index.html">portfolio</a></li>
+                    <li><a href="../about.html">about</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Return to Top-->
+        <a class="totop uk-visible@m" href="#" uk-totop uk-scroll uk-scrollspy="cls: uk-animation-fade; offset-top: 100">Return to
+            Start
+        </a>
+
+        <!--Project Title Card-->
+        <div class="uk-flex-middle" uk-grid>
+            <div class="hero-image-container uk-width-1-2@m uk-visible@m">
+                <img class="hero-image" src="../lib/images/dc/degreechamp_full.jpg">
+            </div>
+            <div class="uk-width-1-2@m">
+                <div class="hero-text uk-text-center">
+                    <h1>DegreeChamp</h1>
+                    <p class="lead">Mission: Design a custom degree planner application that increases on-time college graduation rates.</p>
+                    <hr class="uk-divider-small">
+                    <ul class="project-menu uk-list" uk-scrollspy="cls: uk-animation-fade; target: .menu-item; delay: 100;">
+                        <li class="menu-item"><a href="#research" class="no-decoration" uk-scroll>Objective #1: Research the effect of the current state of degree planning on students and advisors.</a></li>
+                        <li class="menu-item"><a href="#features" class="no-decoration" uk-scroll>Objective #2: Define a feature list that incorporates user insights.</a>
+                        </li>
+                        <li class="menu-item"><a href="#design" class="no-decoration" uk-scroll>Objective #3: Design the user interface for students and advisors.</a></li>
+                        <li class="menu-item"><a href="#reflect" class="no-decoration" uk-scroll>Reflection</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!--Introduction-->
+        <div class="project-intro">
+            <div class="uk-margin-auto uk-container" uk-grid>
+                <div class="uk-width-3-4@m">
+                    <h3>Introduction</h3>
+                    <p><a href="https://www.degreechamp.com/" target="_blank">DegreeChamp</a> (formerly known as RamifAI) is an automated degree-planning software designed to create a personalized degree plan for college students. The goal is to prevent students from being forced to delay their graduation
+                    due to poor planning caused by unclear requirements and inconsistent class schedules and sizes.</p>
+                    <p>I joined the DegreeChamp team when it was a start-up with UT Dallas’s UT Design program. For a semester, I worked
+                    alongside fellow UX/UI designer Marcus Gonzalez and the start-up owner James Griffin to design the first iteration of
+                    DegreeChamp. This was my first “real-world” project, and I gained a lot of experience on managing a project and
+                    communicating with product owners and development teams.</p>
+                </div>
+                <div class="uk-width-1-4@m">
+                    <h5>Role</h5>
+                    <span>UX/UI Designer</span><br>
+                    <h5>Client</h5>
+                    <span><a href="https://www.degreechamp.com/" target="_blank">DegreeChamp</a></span>
+                    <h5>Time</h5>
+                    <span>5 Months</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Content-->
+        <div class="project-content">
+            <div class="uk-container-small uk-margin-auto uk-padding">
+
+                <!--Objective 1-->
+                <hr id="research" class="uk-divider-icon">
+                <div class="objective-block">
+                    <h3>Objective #1</h3>
+                    <h4>Research the effect of the current state of degree planning on students and advisors.</h4>
+                </div>
+                <div class="text-block">
+                    <h5>Personal Experience</h5>
+                    <p>As a student myself at the time of this project, I had a pretty good idea about the stresses myself and my friends faced
+                    about planning degree pathways. What was the quickest way for me to graduate? Is this class only available in the
+                    spring? Have I met all the requirements I need to take this course? How quickly do I need to refresh my browser so I can
+                    sign up for my courses before everyone else in my time slot?</p>
+
+                    <p>I also knew the horror stories of students who were forced to graduate late because they didn’t realize a course was
+                    only offered once a year, or they forgot about a minor requirement unrelated to their major, or the one class they needed filled up before they
+                    even had the chance to sign-up. College is expensive and exhausting – it shouldn’t be this hard to find the best way
+                    through.</p>
+
+                    <h5>Student Interviews</h5>
+                    <p>To confirm and expand our understanding of registration and graduation struggles, my teammate, Marcus Gonzalez, and I
+                    reached out to 12 students from a variety of majors and classifications. We asked them questions such as:</p>
+
+                    <ul class="uk-list-divider-modifier">
+                        <li>How far in advance do you plan your classes?</li>
+                        <li>Did you create a four-year plan? Was it useful to you?</li>
+                        <li>Have you faced any struggles when registering for classes?</li>
+                    </ul>
+
+                    <h5>Advisor Interviews</h5>
+                    <p>Students weren’t our only focus – we also needed to understand the needs and perspective of advisors. We talked with the
+                    Engineering & Computer Science (ECS) advising department at UT Dallas next. To start, we interviewed 2 advisors
+                    individually, asking questions like:</p>
+                    
+                    <ul class="uk-list-divider-modifier">
+                        <li>What are your specific job tasks?</li>
+                        <li>What are the ideal outcomes you desire from a meeting with students?</li>
+                        <li>What are your methodologies?</li>
+                        <li>What common questions do students ask you?</li>
+                        <li>What common problems do you face?</li>
+                    </ul>
+
+                    <p>Once we had a solid prototype of a student view, we met with the entire ECS advising team to evaluate our work. Although
+                    our main intent was to gather specific feedback on our prototype, what ended up happening was a high-energy
+                    brainstorming fest for potential features. The atmosphere in the room was electric – the advisors, pumped about this new
+                    software that could radically improve their workflow, started rapidly bouncing ideas off of each other. I learned more
+                    about the advising team’s culture, workflow, and needs in 30 minutes than I did with weeks of previous research. I left
+                    the meeting with tons of new feature ideas and a significant market opportunity for my team.</p>
+
+                    <h5>Insights</h5>
+                    <p>The research results, combined with our own experience as students, provided us valuable insights. The more I learned
+                    about the college degree ecosystem, the more I realized advisors were the key beneficiaries of this software. A single
+                    advisor can oversee hundreds of students. They are the ones capable of making the biggest impact, so a software
+                    optimized to their needs will consequently bolster their success.</p>
+
+                    <p>In respect to the start-up company, I’m unable to publicly share the specific insights I found while performing research
+                    for the company. If you’d like to know more about the research process, please reach out to me.</p>
+
+                </div>
+
+                <!--Objective 2-->
+                <hr id="features" class="uk-divider-icon">
+                <div class="objective-block">
+                    <h3>Objective #2</h3>
+                    <h4>Define a feature list that incorporates user insights.</h4>
+                </div>
+                <div class="text-block">
+                    <p>Using our research, we distilled our customer needs into a feature list that described all of the functionality that
+                    should be included in the web app. Based on our research, we expected to have 3 separate views for each of our user groups: students, advisors, and administrators. During my time with the project, we focused first on creating a feature list for student and advisor views.</p>
+
+                    <p>I've documented some key features for each view. I'm unable to describe the specific user insights that informed each of these features in respect to the comapny, but I do make sure that each of these features meet a user or business need.</p>
+
+                    <h5>Student View Key Features</h5>
+                    <ul class="uk-list-divider-modifier">
+                        <li>View their current degree trajectory based on their chosen major and course history</li>
+                        <li>View their expected graduation date</li>
+                        <li>View recommended class schedules for all future semesters</li>
+                        <li>Adjust their curated degree plan as needed</li>
+                        <li>Import credits gathered from other institutions</li>
+                    </ul>
+
+                    <h5>Advisor View Key Features</h5>
+                    <ul class="uk-list-divider-modifier">
+                        <li>Search for individual students</li>
+                        <li>View a student's expected course plan</li>
+                        <li>Suggest edits to a student's course plan</li>
+                        <li>Document meetings with students</li>
+                        <li>View a student's audit</li>
+                        <li>Store relevant documents</li>
+                        <li>Batch students into lists based on certain filters</li>
+                    </ul>
+                </div>
+
+                <!--Objective 3-->
+                <hr id="design" class="uk-divider-icon">
+                <div class="objective-block">
+                    <h3>Objective #3</h3>
+                    <h4>Design the user interface for students and advisors.</h4>
+                </div>
+                <div class="text-block">
+                    <p>We started by creating low-resolution, low-fidelity wireframes. There were three core screens in the student view:
+                    'Homepage', 'Create Courseplan', and 'Edit Courseplan'. Initially, we expected a lot of students to not care enough to go
+                    beyond the homepage, so our original thought was to place as much important information as possible on the opening
+                    screen.</p>
+
+                    <div uk-lightbox class="uk-card uk-width-2-3@m uk-margin-auto">
+                        <div class="uk-card-media-top">
+                            <a class="uk-inline" href="../lib/images/dc/home_v1.png"
+                                data-caption="The first version of the Student View homepage.">
+                                <img src="../lib/images/dc/home_v1.png">
+                            </a>
+                        </div>
+                        <div class="caption">
+                            The first version of the Student View homepage.
+                        </div>
+                    </div>
+
+                    <p>However, this version is too crowded and overwhelming for a homepage. It doesn't convey what's truly important to
+                    students which is 1) when can they graduate, 2) what classes do they need to take next semester, and 3) are there any
+                    problems they need to fix. With this in mind, we revamped the homepage to be a dashboard that streamlined information
+                    into meaningful, quick chunks.</p>
+
+                    <div uk-lightbox class="uk-card uk-width-2-3@m uk-margin-auto">
+                        <div class="uk-card-media-top">
+                            <a class="uk-inline" href="../lib/images/dc/dashboard_v1.png" data-caption="The early, streamlined version of the Student View homepage, designed to focus only on what matters most to students.">
+                                <img src="../lib/images/dc/dashboard_v1.png">
+                            </a>
+                        </div>
+                        <div class="caption">
+                            The early, streamlined version of the Student View homepage, designed to focus only on what matters most to students.
+                        </div>
+                    </div>
+
+                    <p>My partner Marcus designed the 'Edit Course Plan' page, while I worked on the homepage. Each week we'd present our work
+                    to the development team to get feedback. We iterated our screens several times before finally settling on these
+                    versions.</p>
+
+                    <div uk-lightbox class="uk-card uk-width-2-3@m uk-margin-auto">
+                        <div class="uk-card-media-top">
+                            <a class="uk-inline" href="../lib/images/dc/dashboard_final.png"
+                                data-caption="The final rendering of the Student View dashboard for the MVP.">
+                                <img src="../lib/images/dc/dashboard_final.png">
+                            </a>
+                        </div>
+                        <div class="caption">
+                            The final rendering of the Student View dashboard for the MVP.
+                        </div>
+                    </div>
+                    <div uk-lightbox class="uk-card uk-width-2-3@m uk-margin-auto">
+                        <div class="uk-card-media-top">
+                            <a class="uk-inline" href="../lib/images/dc/editcp_final.png"
+                                data-caption="The final rendering of the Edit Course Plan screen for the MVP.">
+                                <img src="../lib/images/dc/editcp_final.png">
+                            </a>
+                        </div>
+                        <div class="caption">
+                            The final rendering of the Edit Course Plan screen for the MVP.
+                        </div>
+                    </div>
+
+                    <p>About 10 weeks into the semester, we started designing the advisor interface. The development team could only complete
+                    one view by the end of the semester, but our work could be used for future dev teams. You can view some of my favorite interfaces I designed below.</p>
+
+                    <div class="uk-child-width-1-3@m" uk-grid uk-lightbox>
+                        <div class="uk-card">
+                            <div class="uk-card-media-top">
+                                <a href="../lib/images/dc/ramifai_advisor_info.png" data-caption="Screen design of the Advisor View: Student Info">
+                                    <img src="../lib/images/dc/ramifai_advisor_info.png">
+                                </a>
+                            </div>
+                            <div class="caption">
+                                Screen design of the Advisor View: Student Info
+                            </div>
+                        </div>
+                        <div class="uk-card">
+                            <div class="uk-card-media-top">
+                                <a href="../lib/images/dc/ramifai_audit.png" data-caption="Screen design of the Advisor View: Student Audit">
+                                    <img src="../lib/images/dc/ramifai_audit.png">
+                                </a>
+                            </div>
+                            <div class="caption">
+                                Screen design of the Advisor View: Student Audit
+                            </div>
+                        </div>
+                        <div class="uk-card">
+                            <div class="uk-card-media-top">
+                                <a href="../lib/images/dc/ramifai_advisor_transaction.png" data-caption="Screen design of the Advisor View: Student Transaction History">
+                                    <img src="../lib/images/dc/ramifai_advisor_transaction.png">
+                                </a>
+                            </div>
+                            <div class="caption">
+                                Screen design of the Advisor View: Student Transaction History
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--Reflection-->
+                <hr id="reflect" class="uk-divider-icon">
+                <div class="objective-block">
+                    <h3>Reflection</h3>
+                </div>
+                <div class="text-block">
+                    <p>DegreeChamp was my first shot at doing real UX work for a real audience. The project owner, James Griffin, had a great idea to solving a lot of the issues students faced, and I was thrilled to support his mission. I truly wished I had something like this when I was going through college. It would have satisified my need to overplan everything about college.</p>
+                
+                    <p>But I wasn't just designing this software for me. I had to consider all of the users this product would affect.</p>
+                    
+                    <p>I was pleased with the user research my partner and I did for this project. I learned about the struggles my fellow students faced, as well as sections of students who this product would not benefit at all.  I also learned about the many obstacles advisors faced, and how by solving their issues would solve a lot of students' issues. As with many projects, there was a lot more research I wish I could have done, including contextual interviews and wireframe testing. However, I'm glad I got the chance to gather the insights we did.</p>
+                
+                    <p>I was also very pleased with our final UI design. Marcus had a strong role in defining the visual design of the project, and I was able to bounce off his work to incorporate the user insights we gathered into the UI, such as in the creation of the dashboard. </p>
+
+                    <p>One of the things I wish I could've done during my time with DegreeChamp is user-testing. We created a solid design in our team's perspective, but we never got to verify this with actual users.</p>
+
+                    <p>All in all, I consider DegreeChamp to be a great first project for me to apply my UX education. </p>
+                
+                </div>
+
+                <hr class="uk-divider-icon">
+                
+                <div class="uk-text-center">
+                    <p class="lead"><a class="no-decoration" href="redisturb.html"><i class="far fa-arrow-alt-circle-right"></i> Read how I
+                            set Creative Disturbance on the path from experimental project to professional project next.</a></p>
+                    <p><a href="../index.html">Or view all of my projects</a></p>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <!--End Content Container-->
+
+        <!--Footer-->
+        <footer class="footer">
+            <nav class="uk-navbar-container uk-navbar-transparent uk-container uk-container-medium" uk-navbar>
+                <div class="uk-navbar-left">
+                    <a href="../index.html" class="uk-navbar-item uk-logo">hannah averill</a>
+                    <!--Logo Home-->
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-subnav uk-subnav-divider">
+                        <li><a href="../index.html">portfolio</a></li>
+                        <!--portfolio-->
+                        <!-- <li><a href="../projects/archive.html">archive</a></li> -->
+                        <!--archive-->
+                        <li><a href="../about.html">about</a></li>
+                        <!--about-->
+                        <li><a href="https://www.linkedin.com/in/hannah-barnes-0188a1127/">linkedIn</a></li>
+                        <!--LinkedIn-->
+                    </ul>
+                </div>
+            </nav>
+        </footer>
+
+    </div>
+
+    <!--Javascript-->
+    <script src="../lib/js/uikit.min.js"></script>
+    <script src="../lib/js/uikit-icons.min.js"></script>
+</body>

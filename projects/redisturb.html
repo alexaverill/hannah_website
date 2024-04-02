@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<header>
+    <!--CSS-->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600|Playfair+Display|Domine|Open+Sans:400,600"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../lib/css/uikit.min.css" />
+    <link rel="stylesheet" href="../lib/css/index.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</header>
+
+<body>
+    <div class="background">
+
+        <!--Main Navigation-->
+        <nav class="uk-navbar-container uk-navbar-transparent nav-negative uk-visible@m" uk-navbar>
+            <div class="uk-navbar-left">
+                <a href="../index.html" class="uk-navbar-item uk-logo"><img style="width: 45px;" src="../lib/images/triangle_icon.png"></a>
+                <!--Logo Home-->
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li><a href="../index.html">portfolio</a></li>
+                    <!--Portfolio-->
+                    <li><a href="../about.html">about</a></li>
+                    <!--About-->
+                </ul>
+            </div>
+        </nav>
+
+        <!--Mobile Navigation-->
+        <button id="mobile-nav-button" class="uk-hidden@m" type="button" uk-toggle="target: #mobile-nav" uk-icon="icon: menu"></button>
+        <div id="mobile-nav" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar">
+                <ul class="uk-nav uk-nav-default">
+                    <a class="uk-offcanvas-close" uk-close></a>
+                    <li><a href="../index.html">portfolio</a></li>
+                    <li><a href="../about.html">about</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Return to Top-->
+        <a class="totop uk-visible@m" href="#" uk-totop uk-scroll uk-scrollspy="cls: uk-animation-fade; offset-top: 100">Return to Start
+        </a>
+
+        <!--Project Title Card-->
+        <div class="uk-flex-middle" uk-grid>
+            <div class="hero-image-container uk-width-1-2@m uk-visible@m">
+                <img class="hero-image" src="../lib/images/cd/redisturb_full.jpg" alt="Image">
+            </div>
+            <div class="uk-width-1-2@m uk-width-1-1@s">
+                <div class="hero-text uk-text-center">
+                    <h1>ReDisturb</h1>
+                    <p class="lead">Mission: Revamp Creative Disturbance's user experience, information architecture, and digital presence.</p>
+                    <hr class="uk-divider-small">
+                    <ul class="project-menu uk-list" uk-scrollspy="cls: uk-animation-fade; target: .menu-item; delay: 100;">
+                        <li class="menu-item"><a href="#research" class="no-decoration" uk-scroll> Objective #1: Research obstacles facing the platform.</a></li>
+                        <li class="menu-item"><a href="#ia" class="no-decoration" uk-scroll>Objective #2: Rebuild the platform's information architecture.</a></li>
+                        <li class="menu-item"><a href="#ux" class="no-decoration" uk-scroll>Objective #3: Redesign the look and feel of the website.</a></li>
+                        <li class="menu-item"><a href="#manage" class="no-decoration" uk-scroll>Objective #4: Optimize the process of publishing podcasts.</a></li>
+                        <li class="menu-item"><a href="#reflect" class="no-decoration" uk-scroll>Reflection</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+
+        
+
+        <!--Introduction-->
+        <div class="project-intro">
+            <div class="uk-margin-auto uk-container" uk-grid>
+                <div class="uk-width-3-4@m">
+                    <h3>Introduction</h3>
+                    <p><a href="https://creativedisturbance.org/" target="_blank">Creative Disturbance</a> has been making a splash in the international podcast scene for more than 3 years, publishing over
+                    450 podcasts in 13+ languages and featuring art and science scholars from all over the world. However, the project’s
+                    success had outgrown its current infrastructure, causing issues such as a buggy website, delayed publishing, and
+                    overstressed team members. The time had come to take the experimental prototype to the next level, so for my senior
+                    capstone, I was challenged to gather a team and revamp the platform’s user experience, information architecture, and
+                    digital presence.</p>
+                    <p>This project was the culmination of all the skills I had developed throughout my undergraduate career, and it’s also one
+                    of my favorites. I am very excited to share this incredible experience.</p>
+                </div>
+                <div class="uk-width-1-4@m">
+                    <h5>Role</h5>
+                    <span>Project Lead</span><br>
+                    <span>UX Designer</span><br>
+                    <span>Information Architect</span>
+                    <h5>Client</h5>
+                    <span><a href="https://artscilab.atec.io/" target="_blank">The ArtSci Lab at UT Dallas</a></span>
+                    <h5>Time</h5>
+                    <span>6 Months for Phase 1</span>
+                </div>
+            </div>
+            
+            <div class="uk-text-center uk-margin-large-top">
+                <h4>Team Members</h4>
+            </div>
+            <div class="uk-margin-auto uk-container uk-child-width-1-5@m uk-child-width-1-3@s uk-child-width-1-2 uk-flex uk-flex-center uk-text-center" uk-grid>
+                <div>
+                    <img src="../lib/images/cd/yvan.png">
+                    <h5 class="uk-margin-remove-top">Yvan Tina</h5>
+                    <span>Project Owner</span>
+                </div>
+                <div>
+                    <img src="../lib/images/cd/cassini.png">
+                    <h5 class="uk-margin-remove-top">Cassini Nazir</h5>
+                    <span>Mentor & Supervisor</span>
+                </div>
+                <div>
+                    <img src="../lib/images/cd/roger.png">
+                    <h5 class="uk-margin-remove-top">Roger Malina</h5>
+                    <span>Mentor & Supervisor</span>
+                </div>
+                <div>
+                    <img src="../lib/images/cd/jacob.png">
+                    <h5 class="uk-margin-remove-top">Jacob Hunwick</h5>
+                    <span>Visual Designer</span>
+                </div>
+                <div>
+                    <img src="../lib/images/cd/ela.png">
+                    <h5 class="uk-margin-remove-top">Ela Detecio</h5>
+                    <span>Visual Designer</span>
+                </div>
+                <div>
+                    <img src="../lib/images/cd/al.png">
+                    <h5 class="uk-margin-remove-top">Al Madireddy</h5>
+                    <span>Web Developer</span>
+                </div>
+                <div>
+                    <img src="../lib/images/cd/andrew.png">
+                    <h5 class="uk-margin-remove-top">Andrew Oh</h5>
+                    <span>Sound Editor</span>
+                </div>
+                <div>
+                    <img src="../lib/images/cd/oskar.png">
+                    <h5 class="uk-margin-remove-top">Oskar Olsson</h5>
+                    <span>Sound Editor</span>
+                </div>
+                <div>
+                    <img src="../lib/images/cd/kyle.png">
+                    <h5 class="uk-margin-remove-top">Kyle Hamilton</h5>
+                    <span>Financial Advisor</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Content-->
+        <div class="project-content">
+            <div class="uk-container-small uk-margin-auto uk-padding">
+                
+                <!--Objective 1-->
+                <hr id="research" class="uk-divider-icon">
+                <div class="objective-block">
+                    <h3>Objective #1</h3>
+                    <h4>Research obstacles facing Creative Disturbance and why they exist</h4>
+                </div>
+                <div class="text-block">
+                    <p>When I first met the Creative Disturbance team, I saw a small group of stressed, overworked students who were
+                            tackling a
+                            mission that was frankly better suited to a fulltime company. The group wanted to promote the niche work of
+                            art and
+                            science scholars across the world through podcasts, and eventually, other experimental forms. As someone
+                            who, at the
+                            time, was not a podcast listener, it took me a while understand this mission and appreciate its value – at
+                            first, all I
+                            saw were the numerous challenges facing the platform. However, the Creative Disturbance team’s passion for
+                            their mission
+                            was infectious, and I found myself wanting to do all I could to support the team.</p>
+                
+                    <h5>Challenges</h5>
+                    <ul class="uk-list uk-list-bullet">
+                        <li><strong>Identify user groups.</strong> What are each group’s goals, processes, and struggles?</li>
+                        <li><strong>Determine usability issues with the website.</strong> What aspects are working against the team’s mission? What’s
+                               missing?</li>
+                        <li><strong>Understand the team’s work process.</strong> What are the pain points and bottlenecks?</li>
+                        <li><strong>Classify content.</strong> What kind of content exists and how is it organized?</li>
+                    </ul>
+                    <h5>Solutions</h5>
+                    <p><strong>I interviewed stakeholders and team members to gain an overview of the project’s goals, users, processes, and
+                    immediate painpoints.</strong> These conversations highlighted some well-defined issues, such as a painfully slow website, but
+                    they also hinted at deeper questions, like what happened that caused the project’s progress to plateau and even decline
+                    in its second year?</p>
+                    <p><strong>I performed a heuristic evaluation of the current website.</strong> Everyone knew that the website needed a serious overhaul, but knowing what not to do can be very helpful when designing
+                    the next website. Using <a target="_blank" href="https://www.usability.gov/how-to-and-tools/methods/heuristic-evaluation.html"> Nielsen’s Heuristics</a>, I discovered major usability issues such
+                    as long loading times, frustrating navigation, and a lack of guidance on how to participate in the project.</p>
+                    <p><strong>I inventoried 450+ podcasts.</strong> A lack of metadata made this task even more difficult, but the beautiful AirTable sheet I created made it worth it in
+                    the end. Now, we had the base we needed to build a proper information architecture for the website.</p>
+                    <p><strong>I interviewed our content creators to learn what they love, and what they hate.</strong> For the most part, our creators greatly valued being a part of Creative Disturbance. Podcasting veterans offered advice
+                    on how to we can cultivate our initial support for new creators and improve our website, but I also learned about
+                    frustrations regarding the limited value our brand provides.</p>
+                </div>
+
+                <!--Objective 2-->
+                <hr id="ia" class="uk-divider-icon">
+                <div class="objective-block">
+                    <h3>Objective #2</h3>
+                    <h4>Redesign the platform's information architecture.</h4>
+                </div>
+                <div class="text-block">
+                    <p>As a content-oriented platform, the biggest issue Creative Disturbance faced was its poor content visibility. Users
+                    could only access content through the homepage or by scrolling through a long list of undescriptive channels. This
+                    layout <strong>intimidated new users, discouraged user exploration,</strong> and <strong>significantly hurt content producers</strong> since most of their
+                    content received little downloads after the initial publishing. By revamping the site architecture, we could provide a
+                    better user experience and make the platform more valuable for content creators.</p>
+                
+                    <h5>Challenges</h5>
+                    <ul class="uk-list uk-list-bullet">
+                        <li><strong>Most of our content had no metadata or poor metadata.</strong></li>
+                        <li><strong>Our content was audio-based</strong>, meaning there was no good way to extract metadata besides personally listening to each
+                        podcast.</li>
+                        <li><strong>The website terminology, while matching our brand, was unclear and confusing to new users</strong>, especially when translated
+                        across languages.</li>
+                        <li><strong>The only way to find a podcast episode on the website was by searching the name directly or picking your way through the podcast
+                        listings.</strong> Most podcast episodes dropped off in downloads after the initial publishing and promotion.</li>
+                    </ul>
+                    <h5>Solutions</h5>
+                    <p><strong>I coerced people into listening to and categorizing podcasts in exchange for pizza.</strong> I had created a basic terminology for podcast categories based on some word-processing of the content inventory I had
+                    created, but I needed people to make sure podcasts are categorized and tagged correctly. So I organized a couple pizza
+                    parties and set people to work. I also set a process for the future so that these categorizations occur as the podcasts
+                    are created, never again all at once.</p>
+                    <p><strong>I included a way for users to search by topic.</strong> This worked well with our current content offerings, since most of our channels offered stand-alone episodes focused on
+                    specific topics. Listeners could now easily discover content from a variety of channels that matched their specific
+                    interests. The tagging pizza parties gave us the metadata we needed to actually implement this in the future.</p>
+                    <p><strong>We designed a searching system that allowed users to combine topics to search.</strong> This was one of my favorite ideas that arose from our early rapid wireframing workshops. It matched well with our brand
+                    theme of interdisciplinary studies while also being fun and unique. The system also accommodated the 13+ languages
+                    offered by the platform.</p>
+                    <p><strong>I updated internal page navigation to improve searching efficiency.</strong> I included ways to filter and search content within a page, such as on our ‘People’ and ‘Channel’ projects. I also focused
+                    on presenting more meaningful content in a condensed format. You can read more about my layout designs in the next
+                    section.</p>
+                    <p><strong>We updated website terminology to be more clear and welcoming to new users.</strong> For example, the old website called podcasts ‘Disturbances’. We updated this terminology to ‘Channels’, which is a more
+                    familiar term and can represent multiple media formats in the future.</p>
+
+                    <div uk-lightbox class="uk-card">
+                        <div class="uk-card-media-top">
+                            <a class="uk-inline" href="../lib/images/cd/topics.png"
+                                data-caption="Users can mix-and-match topics to discover new content.">
+                                <img src="../lib/images/cd/topics.png">
+                            </a>
+                        </div>
+                        <div class="caption">
+                            Users can mix-and-match topics to discover new content.
+                        </div>
+                    </div>
+                    <div uk-lightbox class="uk-card">
+                        <div class="uk-card-media-top">
+                            <a class="uk-inline" href="../lib/images/cd/site_map.png"
+                                data-caption="This is the site map for the new website with updated terminology.">
+                                <img src="../lib/images/cd/site_map.png">
+                            </a>
+                        </div>
+                        <div class="caption">
+                            This is the site map for the new website with updated terminology.
+                        </div>
+                    </div>
+                </div>
+
+                <!--Objective 3-->
+                <hr id="ux" class="uk-divider-icon">
+                <div class="objective-block">
+                    <h3>Objective #3</h3>
+                    <h4>Design the user experience of the new website.</h4>
+                </div>
+                <div class="text-block">
+                
+                    <h5>Challenges</h5>
+                    <ul class="uk-list uk-list-bullet">
+                        <li><strong>Our channels all share a single RSS feed.</strong> External podcasting apps show all of our content under a single podcast,
+                        which caused a lot of confusion and hindered content creators’ brand.</li>
+                        <li><strong>Content visibility is extremely limited after initial publishing.</strong> Interviews from our content creators showed a big
+                        concern over the value our platform can bring to their content, and our analysis showed a sharp drop in listens after the first promotion. We needed to increase the number of listens our podcasts
+                        received.</li>
+                        <li><strong>We needed to be accessible to a diverse, international audience.</strong> Creative Disturbance hosts content in 13+ languages and welcomes an incredibly diverse audience. Making sure our
+                        website is accessible to such a varied audience is incredibly important.</li>
+                    </ul>
+                    <h5>Solutions</h5>
+                    <p><strong>I connected content across the website.</strong> Listeners are recommended episodes based off of language and similar topics to the current episode they’re listening to.
+                    Creator and guest podcaster mentions always links back to a bio page, where you can see other episodes they’ve worked
+                    on. You can search by topic, episode, channel, people or language. Discovering content is now a lot easier for our
+                    listeners.</p>
+                    <p><strong>I designed a homepage that celebrates our multi-national content and experimental brand.</strong> Users can click on hotspots on a map of the world to discover Creative Disturbance’s latest podcast episodes. They can
+                    also explore featured topic combinations.
+                    </p>
+                    <p><strong>I made multi-lingual accommodations a priority.</strong> Content is recommended first by related languages, episodes always specify their language, and users have the option to
+                    sort by language when searching. I also considered smaller issues like ensuring dates are in a multi-national friendly
+                    format.</p>
+
+                    <div uk-lightbox class="uk-card">
+                        <div class="uk-card-media-top">
+                            <a class="uk-inline" href="../lib/images/cd/similar_episodes.png" data-caption="Similar podcast episodes are recommended based on the same language and topics as the current episode.">
+                                <img src="../lib/images/cd/similar_episodes.png">
+                            </a>
+                        </div>
+                        <div class="caption">
+                            Similar podcast episodes are recommended based on the same language and topics as the current episode.
+                        </div>
+                    </div>
+                </div>
+
+                <!--Objective 4-->
+                <hr id="manage" class="uk-divider-icon">
+                <div class="objective-block">
+                    <h3>Objective #4</h3>
+                    <h4>Build and manage the design team.</h4>
+                </div>
+                <div class="text-block">
+                    <p>I started this project as a design project, but it ended up being just as much about project management as it was about
+                    design. It was my first time leading a large-scale project, and it felt as if I met both failure and victory on a weekly
+                    basis. I learned so much that semester, and my experience sparked a desire to continue managing design teams in the
+                    future.</p>
+                    <h5>Challenges</h5>
+                    <ul class="uk-list uk-list-bullet">
+                        <li><strong>Bring together several new team members</strong> with little knowledge about Creative Disturbance and diverse skills sets into a
+                        fully-formed team.</li>
+                        <li><strong>Identify goals, develop a process, and plan out a project timeline.</strong></li>
+                        <li><strong>Create a shared understanding of the project’s goals</strong> between stakeholders and team members.</li>
+                    </ul>
+                    <h5>Solutions</h5>
+                    <p><strong>I hosted a rapid wireframing workshop to build team connection and encourage blue sky brainstorming.</strong> I pushed the team to sketch out as many ideas as they could for the homepage design in iterative sessions with reviews
+                    in between. My goal was to use time to pressure my team into rapid brainstorming, as well as build comradery through
+                    their shared challenge. This workshop was honestly a lot of fun and one of my favorite experiences. We got a couple of
+                    gems from it too, such as our topic combination feature.</p>
+                    <p><strong>I developed a process based off the double diamond method, identified what I wanted to accomplish during my time with
+                    the project, and developed a project timeline.</strong>
+                    </p>
+                    <p><strong>I identified primary goals for current and future phases alongside the project owner, Yvan Tina, and hosted a strategy
+                    meeting with the team and main stakeholders to create shared understanding.</strong> With everyone in one place, we discussed what each of us wanted for the future of the project.</p>
+
+                    <div class="uk-child-width-1-2@m" uk-grid uk-lightbox>
+                        <div class="uk-card">
+                            <div class="uk-card-media-top">
+                                <a href="../lib/images/cd/strategy_meeting.jpg" data-caption="We hosted a strategy meeting with our team members and stakeholders to discuss the present and future of Creative Disturbance.">
+                                    <img src="../lib/images/cd/strategy_meeting.jpg">
+                                </a>
+                            </div>
+                            <div class="caption">
+                                We hosted a strategy meeting with our team members and stakeholders to discuss the present and future of Creative
+                                Disturbance.
+                            </div>
+                        </div>
+                        <div class="uk-card">
+                            <div class="uk-card-media-top">
+                                <a href="../lib/images/cd/teambuilding.jpg" data-caption="We hosted a rapid wireframing workshop to build team connection and encourage blue sky thinking.">
+                                    <img src="../lib/images/cd/teambuilding.jpg">
+                                </a>
+                            </div>
+                            <div class="caption">
+                                We hosted a rapid wireframing workshop to build team connection and encourage blue sky thinking.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!--Reflection-->
+                <hr id="reflect" class="uk-divider-icon">
+                <div class="objective-block">
+                    <h3>Reflection</h3>
+                    <h4></h4>
+                </div>
+                <div class="text-block">
+                    <h5>What I Learned</h5>
+                    <p><strong>There’s a lot of important work that you’ll do that is really, really hard to convey to other people. It’s still important. </strong> Even though I had spent 15+ hours a week
+                        on developing Creative Disturbance, most of that time was spent collaborating with stakeholders, organizing team
+                        meetings, brainstorming ideas and roadmaps, building an information architecture, streamlining processes… All in all, 90% of what I
+                        did was invisible work. This made it pretty difficult to explain what I do to others, which was disheartening at times, but now I know that I was laying the foundation for future teams to come through and do the beautiful UI work and
+                        development.</p>
+                    <p><strong>I should be more realistic with my timelines.</strong> I fell for the planning fallacy and didn’t account for the stresses of school on myself and teammates, or how
+                    ridiculously big my mission was. Originally, I had planned to have the website finished by the end of the 6 months, but
+                    we barely had a finished UI design. However, I now have a point of reference that I can use to gauge future projects.
+                    </p>
+                    <p><strong>Understand how your solution is better than the current one, then fight for it.</strong> There were a few solutions I designed that weren’t much better than the current situation, such as when I recommended
+                    switching podcasting services. I failed to fully research our current service – I didn’t realize that the issue was with
+                    how the team was utilizing the service, not the service itself. With this lesson in mind, I made sure in the future to
+                    fully understand and articulate exactly why my designs were better than the current ones. Not only did this help me realize any holes in my solution, it also made me a better communicator when pitching ideas.</p>
+                    <h5>What I Did Well</h5>
+                    <p><strong>I successfully managed a massive project and led a cross-functional team. </strong>Despite the huge amount of planning, organization, and multi-disciplinary work I had to do, I was able to push through
+                    to the end with relative success. There was so much more I wished I could have done, but I am very happy with what I was
+                    able to do in the time I had.</p>
+                    <p><strong>I built out a desperately needed information architecture for the website’s content.</strong> I did the gritty work of inventorying all the content and processing it to create a taxonomy structure. Then, with the
+                    help of my team, we tagged and categorized every single podcast. With this foundation, future teams can implement a more
+                    robust searching system, improve content visibility, and much more.
+                    </p>
+                    <p><strong>I presented my work at UT Dallas's Capstone Celebration and won the People's Choice Award. </strong> With the guidance of my mentor, Cassini Nazir, I focused on telling the story of ReDisturb and Creative Disturbance to an audience of 300+ people. And as someone who struggles with communicating, that was a pretty big deal for me.</p>
+                
+                </div>
+
+                <hr class="uk-divider-icon">
+
+                <div class="uk-text-center">
+                    <p class="lead"><a class="no-decoration" href="acg.html"><i class="far fa-arrow-alt-circle-right"></i> Read how I revamped Apex Catalyst Group's visual identity next.</a></p>
+                    <p><a href="../index.html">Or view all of my projects</a></p>
+                </div>
+                
+            </div>
+
+            
+
+        </div>
+
+        <!--End Content Container-->
+
+        <!--Footer-->
+        <footer class="footer">
+            <nav class="uk-navbar-container uk-navbar-transparent uk-container uk-container-medium" uk-navbar>
+                <div class="uk-navbar-left">
+                    <a href="../index.html" class="uk-navbar-item uk-logo">hannah averill</a>
+                    <!--Logo Home-->
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-subnav uk-subnav-divider">
+                        <li><a href="../index.html">portfolio</a></li>
+                        <!--portfolio-->
+                        <!-- <li><a href="../projects/archive.html">archive</a></li> -->
+                        <!--archive-->
+                        <li><a href="../about.html">about</a></li>
+                        <!--about-->
+                        <li><a href="https://www.linkedin.com/in/hannah-barnes-0188a1127/">linkedIn</a></li>
+                        <!--LinkedIn-->
+                    </ul>
+                </div>
+            </nav>
+        </footer>
+
+    </div>
+
+    <!--Javascript-->
+    <script src="../lib/js/uikit.min.js"></script>
+    <script src="../lib/js/uikit-icons.min.js"></script>
+</body>
